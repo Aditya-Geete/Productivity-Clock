@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hours Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html" class="active">Timer</a>
+            <a href="weekly.html">Weekly Status</a>
+            <a href="monthly.html">Monthly Status</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Study Timer</h1>
+        <div class="timer">
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <p id="todayStatus">Today's study time: 0h 0m 0s</p>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
